@@ -1,0 +1,9 @@
+/* hide Hangouts sign-in panel */
+div[aria-label=Hangouts] { 
+	display: none;
+}
+
+/* remove height limitation from tags navigation */
+div[role=navigation] { 
+	height: auto !important;
+}

@@ -1,0 +1,235 @@
+/* 
+
+Koi-Koi Traditional User Styles
+
+version 20210107
+readme https://forum.boardgamearena.com/viewtopic.php?f=78&t=14148
+
+by Matt Sephton
+https://boardgamearena.com/player?id=85048132
+https://twitter.com/gingerbeardman
+
+*/
+
+/* set bg colour to remove wooden table texture */
+html {
+	background: #908060 !important;
+}
+
+/* replace card images and set shadow */
+#deck, .stockitem {
+	/* gamedesign.jp modern */
+	background-image: url('https://i.imgur.com/xeK0g3g.png') !important;
+
+	/* traditional brighter */
+	/*background-image: url('https://i.imgur.com/EV7yHno.png') !important;*/
+
+	/* traditional dark */
+	/*background-image: url('https://i.imgur.com/2938KpB.png') !important;*/
+}
+
+/* style deck */
+#deck {
+	border-color: #73664D !important;
+	border-radius: 0 !important;
+
+	border-right-width: 0 !important;
+	border-bottom-width: 0 !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+
+	box-shadow: 3px 3px 5px rgba(0,0,0, 0.2) !important;
+}
+
+/* style card */
+.stockitem {
+	border: none !important;
+	border-radius: 0 !important;
+	box-shadow: 3px 3px 5px rgba(0,0,0, 0.2) !important;
+
+	margin-bottom: 0.3em;
+}
+
+/* match highlight */
+.stockitem.highlight {
+	border-bottom: 0.2em solid red !important;
+	margin-bottom: 0.15em !important;
+
+/*	border: 0.2em solid red !important;
+	margin: -0.2em 0.2em 0 -0.2em !important;*/
+
+	/*box-shadow: 3px 3px 5px rgba(255,0,0, 1.0) !important;*/
+}
+
+/* style discard placeholder */
+#faceup_cards_item_1000 {
+	background-image: none !important;
+	border: none !important;
+	box-shadow: none !important;
+
+	/* hide by default */
+	display: none;
+}
+
+/* show discard placeholder if it's at the end of a row */
+#faceup_cards_item_1000:last-child {
+	display: block !important;
+}
+
+/* change text colours */
+#deck_cards_counter, #month_container, .earnedSpace, .discardSpace, .timestamp {
+	color: white;
+}
+
+/* hide white background areas */
+.whiteblock {
+	background-image: none;
+}
+
+/* resize placeholders to fit */
+.earnedSpace {
+	width: 82px;
+	height: 124px;
+}
+
+/* style placeholders */
+.earnedSpace, .discardSpace {
+	border: 2px dashed rgba(0,0,0, 0.4) !important;
+	border-radius: 4px !important;
+	color: rgba(0,0,0, 0.4) !important;
+}
+
+/* make more cards fit horizontally to keep it to 2 rows */
+#cardsontable {
+	/* 5 cards */
+	width: 460px !important;
+
+	/* 6 cards */
+	/*width: 550px !important;*/
+
+	/* show area for JS easy click */
+	background-color: rgba(255,255,255, 0.1);
+	padding: 1em 0.5em 0 1em;
+}
+
+/* move month to right */
+#month_container {
+	left: 600px !important;
+}
+
+/* shrink collected rows */
+.earnedCards {
+	min-height: 90px !important;
+	height: 90px !important;
+}
+
+/* shrink collected cards (also disables sorting/ordering/animation) */
+.earnedCards .stockitem {
+	width: 57px !important;
+	height: 85px !important;
+
+	background-size: 400% 1300%;
+
+	position: unset !important;
+	float: left !important;
+	margin: 0 0.3em 0.3em 0;
+}
+
+/* shrink placeholders for collected cards */
+.earnedCards .earnedSpace {
+	width: 53px !important;
+	height: 81px !important;
+	margin-right: -57px !important;
+
+	font-size: 0.7em;
+	float: left !important;
+}
+
+/* insert blank line(s) above text on shrunken placeolders */
+.earnedCards .earnedSpace:before {
+	white-space: pre-wrap; 
+
+	content: '\A\A';
+}
+
+/* overlap rows of collected kasu */
+#player_1s .stockitem, #opponent_1s .stockitem {
+	margin-bottom: -33px !important;
+}
+
+/* make collected 1s rows wrap at 5 cards wide to make 10 easier to guage */
+#player_1s, #opponent_1s {
+	width: 70%;
+	padding-right: 30%; 
+}
+
+/* disable ordering/sorting/animation of cards on table and in yaku popup */
+#faceup_cards .stockitem, #cards_market .stockitem {
+	position: unset !important;
+	float: left !important;
+	margin: 0 0.35em 0.35em 0;
+}
+
+/* make player turn more noticable */
+body.current_player_is_active #page-title {
+	background-color: yellow;
+}
+
+/* actually hide tool tips */
+.dijitTooltip, .dijitTooltipContainer {
+	display: none !important;
+}
+
+/* hide log messages */
+#logs_wrap #logs .log {
+	display: none !important;
+}
+
+/* show only most recent log message */
+#logs_wrap #logs .log:first-child {
+	display: block !important;
+}
+
+/* show only most recent log message */
+#logs_wrap #logs .log:first-child .roundedbox {
+	background-color: transparent !important;
+	color: white !important;
+}
+
+/* move chat bar dock into corner */
+.desktop_version #chatbardock {
+	right: -195px;
+}
+
+/* move chat bar expanded window back on screen */
+.desktop_version .chatwindowtype_table .chatwindowexpanded {
+	right: 185px;
+}
+
+/* hide chatbar controls */
+.chatbarbelowinput {
+	display: none;
+}
+
+/* hide top bar */
+body.playmode_realtime {
+	margin-top: -62px;
+}
+
+/* hide unwanted page elements */
+#overall-footer, #maingameview_menufooter, #pagesection_howtoplay, #pagesection_competition, #pagesection_competition .col-md-6, #overall-footer-spacer {
+	display: none;
+}
+
+/* make sure collected cards don't overlap what comes below them */
+#left_wrap, #right_wrap {
+	margin-bottom: 20em;
+}
+
+/* 
+
+TODO
+
+- position card gaps using pixels not em or perctange
+
+*/

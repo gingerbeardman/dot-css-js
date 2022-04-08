@@ -1,0 +1,1 @@
+if (document.getElementById('return')) document.getElementById('return').click();

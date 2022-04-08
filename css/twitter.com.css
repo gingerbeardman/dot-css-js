@@ -1,0 +1,17 @@
+/* Legacy hide promoted tweets */
+.suggested-tweet-stream,
+.has-profile-suggested-tweet,
+.promoted-tweet,
+.promoted-account {
+	display: none;
+}
+
+/* Change highlight colour */
+div[aria-selected="true"], div[aria-selected="true"] > div {
+	background-color: #eeeef0 !important;
+}
+
+/* Disable image smoothing */
+div[aria-label="Image"] {
+	/*image-rendering: crisp-edges !important;*/
+}

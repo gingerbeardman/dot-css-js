@@ -1,0 +1,18 @@
+/* Change default monospace font */
+code,
+kbd,
+listing,
+plaintext,
+pre,
+samp,
+tt,
+xmp
+{
+  font-family: Menlo !important;
+}
+
+/* Disable image smoothing on standalone images */
+body > img:only-of-type, .mw-mmv-image img {
+	image-rendering: crisp-edges !important;
+	border-bottom: 4px solid red !important;
+}

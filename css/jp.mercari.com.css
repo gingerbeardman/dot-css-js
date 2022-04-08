@@ -1,0 +1,5 @@
+#___gatsby > div > div > div > a,
+#gatsby-focus-wrapper > div > div > a
+{
+	display: none !important;
+}

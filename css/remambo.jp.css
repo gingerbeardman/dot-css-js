@@ -1,0 +1,13 @@
+#usermenu,
+#nav,
+#header-wrapper,
+#search-wrapper,
+#footer-wrapper,
+#page-wrapper > div:nth-child(5),
+section > :last-child {
+	display: none !important;
+}
+
+header {
+	margin-bottom: 0 !important;
+}

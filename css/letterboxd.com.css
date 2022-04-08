@@ -1,0 +1,5 @@
+.banner,
+.upgrade-kicker,
+a[href="/pro/"] {
+	display: none !important;
+}

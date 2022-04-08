@@ -1,0 +1,9 @@
+/* mobile */
+html.touch #react-root > section > main > section > div:first-child {
+	display: none !important;
+}
+
+/* desktop */
+#react-root > section > main > section > div > div:first-child {
+	display: none !important;
+}

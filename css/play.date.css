@@ -1,0 +1,44 @@
+/* preview panel */
+.caps #preview {
+	/*position: fixed;*/
+	left: var(--ui-section-gutter);
+}
+
+/* charset panel */
+.caps #charset {
+	top: 280px;
+	left: var(--ui-section-gutter);
+}
+
+/* menu blocks */
+.caps .chunk {
+	z-index: 99;
+	position: relative;
+}
+
+/* editor panel */
+.caps #char {
+	top: 640px;
+	left: var(--ui-section-gutter);
+}
+
+/* kerning panel */
+.caps #kern {
+	left: calc( (var(--ui-section-gutter) * 2) + var(--ui-charset-width) + var(--ui-section-gutter));
+}
+
+/* buy,
+   burger,
+   burger,
+   footer,
+   theme,
+   docs
+ */
+.caps #nav-buy,
+.caps #whopper,
+.caps .whopper,
+.caps .bottom,
+.caps #nav > div:nth-child(5),
+.caps #nav > div:nth-child(6) {
+	display: none;
+}

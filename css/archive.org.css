@@ -1,0 +1,4 @@
+.BookReader .BookReaderSearchHilite, .BRmobileMenu .BookReaderSearchHilite, .BRfloat .BookReaderSearchHilite {
+	opacity: 0.4 !important;
+	background-color: #ff0000 !important;
+}
