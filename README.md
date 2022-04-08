@@ -9,4 +9,4 @@ These can be used with the following browser extensions:
 - [AddCSS](https://addons.opera.com/en-gb/extensions/details/addcss/) & [AddJS](https://addons.opera.com/en-gb/extensions/details/addjs/) (Opera)
 
 ### LICENSE
-[The Unlicense](https://github.com/gingerbeardman/dot-css-js/blob/main/LICENSE)
+[MIT](https://github.com/gingerbeardman/dot-css-js/blob/main/LICENSE)
