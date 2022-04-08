@@ -1,5 +1,5 @@
 # dot-css-js
-A collection of CSS and JS snippers that modify the style and functionality of certain websites.
+A collection of CSS and JS code snippets that modify the style and functionality of specific websites.
 
 These can be used with the following browser extensions:
 
